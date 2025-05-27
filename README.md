@@ -157,7 +157,8 @@ _**•	Query result**_
 
 _**•	SQL code**_
 
-```select 
+```SQL
+select 
       format_date("%Y%m", PARSE_DATE("%Y%m%d", date)) as month
       ,sum(totals.transactions)
         /count(distinct fullVisitorId) as Avg_total_transactions_per_user
